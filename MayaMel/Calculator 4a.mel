@@ -1,0 +1,132 @@
+proc int Add(float $num[])
+{
+    //stores the sum
+    float $sum = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        //adds
+        $sum += $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer to the equation " + $equation + " is " + $sum);
+    return $sum;
+}
+
+proc int Subtract(float $num[])
+{
+    //stores the difference
+    float $difference = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        // Subtracts
+        $difference -= $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer of the equation " + $equation + " is " + $difference);
+    return $difference;
+}
+
+proc int divide(float $num[])
+{
+    //stores the quotient
+    float $quotient = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        // divides
+        $quotient /= $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer of the equation " + $equation + " is " + $quotient);
+    return $quotient;
+}
+
+proc int multiply(float $num[])
+{
+    //stores the product
+    float $product = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        // multiplies
+        $product *= $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer of the equation " + $equation + " is " + $product);
+    return $product;
+}
+
+proc float Power(float $num, int $exponent)
+{
+    //checks if the exponent is equal to 0. If yes, it will return a 1
+    if ($exponent == 0) {
+        return 1.0;
+    }
+    
+    //if exponent is not 0 it will run this code
+    float $result = pow($num, $exponent);
+    print($num + " raised to the power of " + $exponent + " is " + $result);
+    return $result;
+}
+
+proc Mean(float $numbers[])
+{
+    int $totalNum= size($numbers);
+    float $sum = 0;
+    string $numbersUsed = "";
+
+    for ($num in $numbers)
+    {
+        $sum += $num; // Adds all numbers together
+        $numbersUsed += ($numbersUsed == "") ? $num : (", " + $num);
+    }
+    
+    float $result = $sum / $totalNum; // finds the mean
+    print("The mean of " + $numbersUsed + " is " + $result);
+}

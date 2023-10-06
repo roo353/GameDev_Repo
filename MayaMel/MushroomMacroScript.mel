@@ -1,0 +1,34 @@
+//Creation of Mushroom Cap
+polySphere -constructionHistory on -object on -radius 1.338522 ; //creates sphere
+select -addFirst polySphere1 ; //selects sphere
+move -relative -objectSpace -worldSpaceDistance 0 8 0 ; //moves sphere
+select -replace pSphere1 ; //selects sphere
+scale -ws -r 2.668436 2.668436 2.668436 ; //scales sphere
+select -replace pSphere1.vtx[0:199] pSphere1.vtx[380] ; //select vertices
+scale -ws -r -p -4.77154e-07cm 6.21412cm -6.36205e-07cm 1 0.377778 1 ; //scale vertices
+move -r -os -wd 0 1.229251 0 ; //moves vertices
+select -r pSphere1.vtx[380] ; //selects vertex
+softSelect -ssd 3.733404 -sud 0.5 ; //soft select radius
+move -r -os -wd 0 1.236454 0 ; //move vertex
+softSelect -ssd 11.928217 -sud 0.5 ; //soft select radius
+select -r pSphere1 ; //selects sphere
+scale -ws -r 1.496279 1.496279 1.496279 ; //scales sphere
+select -r pSphere1 ; //sekects sphere
+move -r -os -wd 0 -0.8 0 ; //moves sphere
+select -r pSphere1.e[360:379] pSphere1.e[720:739] pSphere1.e[760:779] ; //selects edges
+softSelect -sse 1; //turns soft select on
+softSelect -ssd 5.952598 -sud 0.5 ; //soft select radius
+scale -ws -r -p -2.97481e-07cm 12.413564cm -3.56977e-07cm 1 1.5 1 ; //scales edges
+select -r pSphere1 ; //select sphere
+rotate -r -os -fo 0 0 16 ;
+
+
+//creating stem
+polyCylinder -constructionHistory on -object on -radius 1.2 -height 3 -subdivisionsAxis 1 -createUVs 3 ;
+move -relative 0 1.5 0 ;
+select -replace pCylinder1.f[21] ;
+move -relative 0 4.550039 0 ;
+select -replace pCylinder1.f[21] ;
+scale -worldSpace -relative -pivot -1.19209e-07cm 7.550039cm -2.38419e-07cm 0.416459 0.416459 0.416459 ;
+select -r pCylinder1.f[20] ;
+polyBevel3 -fraction 0.7 -offsetAsFraction 1 -autoFit 1 -depth 1 -mitering 0 -miterAlong 0 -chamfer 1 -segments 3 -worldSpace 1 -smoothingAngle 30 -subdivideNgons 1 -mergeVertices 1 -mergeVertexTolerance 0.0001 -miteringAngle 180 -angleTolerance 180 -ch 1 pCylinder1.e[0:19];

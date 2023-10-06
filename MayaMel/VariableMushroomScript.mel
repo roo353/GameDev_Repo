@@ -1,0 +1,34 @@
+// Define variables for mushroom size and cap type
+float $capScale = 0.6; // cap size
+float $stemScale = 1.0; // stem size
+float $softSelectFalloff = 2.0; // control fall off radius
+float $scaleFactor = 1.5; // control deformation
+
+// Create mushroom cap
+polySphere -r 5 -sx 30 -sy 30 -ax 0 1 0 -cuv 2 -ch 1;
+
+// Select the cap and enable Soft Select
+select pSphere1;
+select -r pSphere1.vtx[871];
+softSelect -softSelectEnabled true -softSelectFalloff $softSelectFalloff;
+
+// Perform scaling with Soft Select
+scale -r $scaleFactor $scaleFactor $scaleFactor;
+
+// Disable Soft Select
+softSelect -softSelectEnabled false;
+
+// Move and scale the cap
+move -r 0 ($capScale * 5) 0;
+scale -r $capScale $capScale $capScale;
+
+// Create a mushroom stem and scale it
+polyCylinder -r 1 -h 10 -sx 20 -sy 1 -sz 1 -ax 0 1 0 -cuv 3 -ch 1;
+move -r 0 (-5 * $stemScale) 0;
+scale -r $stemScale $stemScale $stemScale;
+
+// Combine the cap and stem
+select -r pSphere1 pCylinder1;
+polyUnite -ch 1 -mergeUVSets 1 -name "Mushroom";
+
+//used AI to help with soft select as I was struggling with it
