@@ -1,0 +1,203 @@
+proc int Add(float $num[])
+{
+    //stores the sum
+    float $sum = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        //adds
+        $sum += $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer to the equation " + $equation + " is " + $sum);
+    return $sum;
+}
+
+proc int Subtract(float $num[])
+{
+    //stores the difference
+    float $difference = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        // Subtracts
+        $difference -= $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer of the equation " + $equation + " is " + $difference);
+    return $difference;
+}
+
+proc int Divide(float $num[])
+{
+    //stores the quotient
+    float $quotient = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        // divides
+        $quotient /= $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer of the equation " + $equation + " is " + $quotient);
+    return $quotient;
+}
+
+proc int Multiply(float $num[])
+{
+    //stores the product
+    float $product = 0;
+    //stores the numbers used in equation
+    string $equation = "";
+
+    //for loop that sets $i to 0 and adds 1 if its less than the size of the array
+    for ($i = 0; $i < size($num); $i++)
+    {
+        // multiplies
+        $product *= $num[$i];
+        //keeps track of numbers in equation
+        $equation += $num[$i];
+
+        // Add a ", " if it's not the last number
+        if ($i < size($num) - 1)
+        {
+            $equation += ", ";
+        }
+    }
+
+    print("The answer of the equation " + $equation + " is " + $product);
+    return $product;
+}
+
+proc float Power(float $num, int $exponent)
+{
+    //checks if the exponent is equal to 0. If yes, it will return a 1
+    if ($exponent == 0) {
+        return 1.0;
+    }
+    
+    //if exponent is not 0 it will run this code
+    float $result = pow($num, $exponent);
+    print($num + " raised to the power of " + $exponent + " is " + $result);
+    return $result;
+}
+
+proc Mean(float $numbers[])
+{
+    int $totalNum= size($numbers);
+    float $sum = 0;
+    string $numbersUsed = "";
+
+    for ($num in $numbers)
+    {
+        $sum += $num; // Adds all numbers together
+        $numbersUsed += ($numbersUsed == "") ? $num : (", " + $num);
+    }
+    
+    float $result = $sum / $totalNum; // finds the mean
+    print("The mean of " + $numbersUsed + " is " + $result);
+    return $result;
+}
+
+proc Median(float $numbers[])
+{
+    int $count = size($numbers);
+
+    //checks for an input of an array
+    if ($count == 0)
+    {
+        print("Median cannot be calculated without an input of numbers.");
+        return 0.0;
+    }
+
+    float $sortedNumbers[] = `sort $numbers`;
+
+    string $numbersUsed = stringArrayToString($sortedNumbers, ", ");
+
+    float $median;
+
+    if ($count % 2 == 0)
+    {
+        int $middle = $count / 2;
+        $median = ($sortedNumbers[$middle - 1] + $sortedNumbers[$middle]) / 2.0;
+    }
+    else
+    {
+        int $middle = ($count - 1) / 2;
+        $median = $sortedNumbers[$middle];
+    }
+
+    print("The median of " + $numbersUsed + " is " + $median);
+    return $result;
+}
+
+proc Calculator(string $function, float $nums[])
+{
+    if($function == "Add")
+    {
+        Add($nums);
+    }
+
+    else if($function == "Subtract")
+    {
+        Subtract($nums);
+    }
+
+    else if($function == "Divide")
+    {
+        Divide($nums);
+    }
+
+    else if($function == "Multiply")
+    {
+        Multiply($nums);
+    }
+
+    else if($function == "Power")
+    {
+        Power($nums);
+    }
+
+    else if($function == "Mean")
+    {
+        Mean($nums);
+    }
+
+    else if($function == "Median")
+    {
+        Median($nums);
+    }
+}
