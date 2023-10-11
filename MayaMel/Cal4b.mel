@@ -105,14 +105,18 @@ proc int Multiply(float $num[])
 proc float Power(float $num, int $exponent)
 {
     //checks if the exponent is equal to 0. If yes, it will return a 1
-    if ($exponent == 0) {
+    float $result;
+    if ($exponent == 0) 
+    {
         return 1.0;
     }
-    
     //if exponent is not 0 it will run this code
-    float $result = pow($num, $exponent);
+    else
+    {
+        $result = pow($num, $exponent);
+    }
+    
     print($num + " raised to the power of " + $exponent + " is " + $result);
-    return $result;
 }
 
 proc Mean(float $numbers[])
@@ -120,6 +124,12 @@ proc Mean(float $numbers[])
     int $totalNum= size($numbers);
     float $sum = 0;
     string $numbersUsed = "";
+
+    if($totalNum == 0)
+    {
+        print("Needs an input of numbers");
+        return 0.0;
+    }
 
     for ($num in $numbers)
     {
@@ -135,6 +145,17 @@ proc Mean(float $numbers[])
 proc Median(float $numbers[])
 {
     int $count = size($numbers);
+    string $numbersUsed = "";
+    float $sortedNumbers[] = `sort $numbers`;
+
+    for ($i = 0; $i < $count; $i++)
+    {
+        $numbersUsed += $sortedNumbers[$i];
+        if ($i < $count - 1)
+        {
+            $numbersUsed += ", ";
+        }
+    }
 
     //checks for an input of an array
     if ($count == 0)
@@ -143,61 +164,69 @@ proc Median(float $numbers[])
         return 0.0;
     }
 
-    float $sortedNumbers[] = `sort $numbers`;
-
-    string $numbersUsed = stringArrayToString($sortedNumbers, ", ");
-
-    float $median;
-
-    if ($count % 2 == 0)
+    else if ($count % 2 == 0)
     {
         int $middle = $count / 2;
         $median = ($sortedNumbers[$middle - 1] + $sortedNumbers[$middle]) / 2.0;
+        print("The median of " + $numbersUsed + " is " + $median);
+        return $median;
     }
+    
     else
     {
         int $middle = ($count - 1) / 2;
         $median = $sortedNumbers[$middle];
+        print("The median of " + $numbersUsed + " is " + $median);
+        return $median;
     }
-
-    print("The median of " + $numbersUsed + " is " + $median);
-    return $result;
 }
 
-proc Calculator(string $function, float $nums[])
+proc float Calculator(string $function, float $nums[])
 {
-    if($function == "Add")
+    float $result = 0.0;  //stores answers
+
+    if ($function == "Add")
     {
-        Add($nums);
+        $result = Add($nums);
+    }
+    else if ($function == "Subtract")
+    {
+        $result = Subtract($nums);
+    }
+    else if ($function == "Divide")
+    {
+        $result = Divide($nums);
+    }
+    else if ($function == "Multiply")
+    {
+        $result = Multiply($nums);
+    }
+    else if ($function == "Power")
+    {
+        if (size($nums) == 2)
+        {
+            $result = Power($nums[0], int($nums[1]));
+        }
+        else
+        {
+            print("Base and exponent needed");
+        }
+    }
+    else if ($function == "Mean")
+    {
+        $result = Mean($nums);
+    }
+    else if ($function == "Median")
+    {
+        $result = Median($nums);
+    }
+    else
+    {
+        print("Invalid operation: " + $function);
     }
 
-    else if($function == "Subtract")
-    {
-        Subtract($nums);
-    }
-
-    else if($function == "Divide")
-    {
-        Divide($nums);
-    }
-
-    else if($function == "Multiply")
-    {
-        Multiply($nums);
-    }
-
-    else if($function == "Power")
-    {
-        Power($nums);
-    }
-
-    else if($function == "Mean")
-    {
-        Mean($nums);
-    }
-
-    else if($function == "Median")
-    {
-        Median($nums);
-    }
+    return $result;  // Return the calculated result
 }
+
+
+Calculator("Multiply", {3,2,8,6,3,7,4,2,6,3,7,8,5,2,2});
