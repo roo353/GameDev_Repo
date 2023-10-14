@@ -1,0 +1,46 @@
+// Function to duplicate and randomly disperse objects
+global proc placementGenerator(float $xMin, float $xMax, float $yMin, float $yMax, float $zMin, float $zMax, int $duplicates)
+{
+    // Store object(s) name as variable
+    string $selections[] = `ls -selection`;
+
+    // Loop through each object selection
+    for ($i = 0; $i < size($selections); $i++)
+    {
+        // Perform actions for each individual object
+        for ($j = 0; $j < $duplicates; $j++)
+        {
+            // Duplicate current object
+            string $dups[] = `duplicate $selections[$i]`;
+            string $dup = $dups[0];
+
+            // Generate new x, y, and z values based on range arguments
+            float $randomX = `rand $xMin $xMax`;
+            float $randomY = `rand $yMin $yMax`;
+            float $randomZ = `rand $zMin $zMax`;
+
+            // Translate current object to the new position
+            xform -worldSpace -translation $randX $randY $randZ $dup;
+        }
+    }
+}
+
+// Create the UI
+if (`window -exists placementGeneratorUI`) {
+    deleteUI placementGeneratorUI;
+}
+
+window -title "Placement Generator" placementGeneratorUI;
+columnLayout -adjustableColumn true;
+text -label "Number of Objects Wanted:";
+intFieldGrp -numberOfFields 1 -value1 5 duplicates;
+text -label "X Range:";
+floatFieldGrp -numberOfFields 2 -value1 -10 -value2 10 rangeX;
+text -label "Y Range:";
+floatFieldGrp -numberOfFields 2 -value1 0 -value2 0 rangeY;
+text -label "Z Range:";
+floatFieldGrp -numberOfFields 2 -value1 -10 -value2 10 rangeZ;
+button -label "Generate and Place" -command "placementGenerator(`floatFieldGrp -q -value1 rangeX`, `floatFieldGrp -q -value2 rangeX`, `floatFieldGrp -q -value1 rangeY`, `floatFieldGrp -q -value2 rangeY`, `floatFieldGrp -q -value1 rangeZ`, `floatFieldGrp -q -value2 rangeZ`, `intFieldGrp -q -value1 duplicates`)";
+showWindow placementGeneratorUI;
+
+//made with help of classmates and AI
