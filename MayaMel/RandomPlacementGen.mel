@@ -20,7 +20,7 @@ global proc placementGenerator(float $xMin, float $xMax, float $yMin, float $yMa
             float $randomZ = `rand $zMin $zMax`;
 
             // Translate current object to the new position
-            xform -worldSpace -translation $randX $randY $randZ $dup;
+            xform -worldSpace -translation $randomX $randomY $randomZ $dup;
         }
     }
 }
