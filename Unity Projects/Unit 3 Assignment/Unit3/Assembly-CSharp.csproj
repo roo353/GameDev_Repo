@@ -734,11 +734,11 @@
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 3 Assignment\Unit3\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 3 Assignment\Unit3\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 3 Assignment\Unit3\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 3 Assignment\Unit3\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 3 Assignment\Unit3\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
