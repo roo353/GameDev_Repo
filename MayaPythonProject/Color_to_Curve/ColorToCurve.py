@@ -1,27 +1,25 @@
 import maya.cmds as cmds
 
+selections = cmds.ls(sl=True)
 
-def change_shape_override_color():
-    """
-    Change the override color of the shape node for selected object(s).
-    """
-    try:
-        new_color = int(input("Enter the new color index (0-31): "))
-    except ValueError:
-        print("Invalid input. Please enter a valid color index (0-31).")
-        return
+for sel in selections:
+    # get shape of selection:
+    sel_shape = cmds.ls(sel, dag=True, shapes=True)
 
-    if new_color < 0 or new_color > 31:
-        print("Invalid color index. Please enter a value between 0 and 31.")
-        return
+    # check if there is a shape
+    if sel_shape:
+        # get shading groups from shape:
+        shadingGrps = cmds.listConnections(sel_shape, type='shadingEngine')
 
-    selected_objects = cmds.ls(selection=True)  # Get currently selected objects
-    for obj in selected_objects:
-        shapes = cmds.listRelatives(obj, shapes=True, fullPath=True) or []
-        for shape in shapes:
-            cmds.setAttr(shape + '.overrideEnabled', 1)
-            cmds.setAttr(shape + '.overrideColor', new_color)
+        # check if there is a shading group
+        if shadingGrps:
+            # get the shaders:
+            shaders = cmds.ls(cmds.listConnections(shadingGrps), materials=True)
+
+            # check if there is a shader
+            if shaders:
+                # change the color of the material to red
+                cmds.setAttr(shaders[0] + ".color", 1, 0, 0, type="double3")
 
 
-# Example usage:
-change_shape_override_color()
+
