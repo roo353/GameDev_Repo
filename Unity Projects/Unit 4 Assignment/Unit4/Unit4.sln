@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnity", "HoudiniEngineUnity.csproj", "{bf851e8d-cad3-7502-f535-16c9fc660033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnityEditor", "HoudiniEngineUnityEditor.csproj", "{a2928253-d67e-3c51-8ba5-5e0665f2dba1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnity.VisualScripting", "HoudiniEngineUnity.VisualScripting.csproj", "{a1cdd739-0e84-df39-3d01-24dab8fc9bb4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnityEditor.VisualScripting", "HoudiniEngineUnityEditor.VisualScripting.csproj", "{e24c9c52-442d-b597-8e92-69308f15a72c}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{bf851e8d-cad3-7502-f535-16c9fc660033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{bf851e8d-cad3-7502-f535-16c9fc660033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a2928253-d67e-3c51-8ba5-5e0665f2dba1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a2928253-d67e-3c51-8ba5-5e0665f2dba1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a1cdd739-0e84-df39-3d01-24dab8fc9bb4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a1cdd739-0e84-df39-3d01-24dab8fc9bb4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e24c9c52-442d-b597-8e92-69308f15a72c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e24c9c52-442d-b597-8e92-69308f15a72c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
