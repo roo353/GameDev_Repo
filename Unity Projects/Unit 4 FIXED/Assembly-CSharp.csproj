@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{bf851e8d-cad3-7502-f535-16c9fc660033}</ProjectGuid>
+    <ProjectGuid>{8c7ea67e-71de-1382-0f78-aaaf4bc9c512}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>HoudiniEngineUnity</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -40,112 +40,8 @@
     <Analyzer Include="D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_RenderingPipelineDefines.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_GeoNode.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterface.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGSession.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_CookLogs.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIEnums.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_Parameters.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GenerateGeoCache.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_ShelfTools.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_HoudiniAssetSubcomponent.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_VolumeCache.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_MeshIndexFormat.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_AttributeData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_ObjectNode.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_ObjectNode.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceTerrain.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_Parameters.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_TaskManager.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptParameterExample.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_InputNode.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIFunctions.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_MaterialFactory.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetUpdater.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_Task.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_OutputAttributesStore.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_MaterialData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIStructsMembers.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ExampleInstanceCustomAttribute.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SerializableDictionary.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionPDG.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_InputNode.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionSyncInfo.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_PartData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIConstants.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PluginStorage.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_BoundingVolume.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_Defines.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionBase.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_BaseSync.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_TestHelpers.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_AssetDatabase.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadManager.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptMeshInputUVLayoutExample.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_HAPIUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_AttributesStore.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Handles\HEU_HandleParamBinding.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeometryUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HARCImports.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_InstanceInputUIState.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_TerrainUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeneralUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_Logger.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tests\HEU_AssetEventReceiverTest.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGAssetLink.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetPreset.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HAPI\HEU_HAPIStructs.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ExampleEvergreenQuery.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_GeoNode.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_AssetSync.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_Platform.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_HoudiniAsset.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_HoudiniAssetRoot.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Attributes\HEU_OutputAttribute.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetEvents.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_NodeSync.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_ToolsInfo.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_AssetSerializedMetaData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PlatformWin.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionHAPI.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Handles\HEU_Handle.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceTilemap.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_MaterialData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_GeoGroup.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_Curve.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Examples\HEU_ScriptCallbackExample.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HEU_HoudiniVersion.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_PDGAssetLink.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_GeneratedOutput.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_HoudiniEngineError.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedTaskLoadGeo.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedLoadBuffers.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PDG\HEU_PDGObjects.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Core\HEU_PluginSettings.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SimpleJSONUnity.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_EditorUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sessions\HEU_SessionManager.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Sync\HEU_GeoSync.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_PartData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Tasks\HEU_ThreadedTask.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_ObjectInstanceInfo.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputInterfaceMesh.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_VolumeCache.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_SimpleJSON.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\PublicWrappers\IHEU_HoudiniAsset.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_MeshData.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Parameters\HEU_ParameterModifier.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_InputMeshUtility.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Asset\HEU_Curve.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Render\HEU_UnityMaterialInfo.cs" />
-     <Compile Include="Assets\Plugins\HoudiniEngineUnity\Scripts\Utility\HEU_Extensions.cs" />
-     <None Include="Assets\Plugins\HoudiniEngineUnity\Scripts\HoudiniEngineUnity.asmdef" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -395,38 +291,11 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Graphs">
-        <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-        <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
     <Reference Include="ReportGeneratorMerged">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -794,11 +663,98 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 FIXED\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

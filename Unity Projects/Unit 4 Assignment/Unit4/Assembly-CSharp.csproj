@@ -40,8 +40,8 @@
     <Analyzer Include="D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -663,29 +663,14 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
@@ -705,20 +690,38 @@
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
@@ -726,11 +729,20 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>D:\COLLEGE\Fall2023\GameDev_Repo\GameDev_Repo\Unity Projects\Unit 4 Assignment\Unit4\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
