@@ -40,6 +40,7 @@
     <Analyzer Include="D:\Program Files\Unity\Unity Hub Editor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ShieldPowerUp.cs" />
      <Compile Include="Assets\Scripts\HealPowerUp.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
@@ -762,6 +763,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="HoudiniEngineUnityEditor.VisualScripting.csproj">
+      <Project>{e2d129c8-cdd6-16f0-7005-e7b244a068e4}</Project>
+      <Name>HoudiniEngineUnityEditor.VisualScripting</Name>
+    </ProjectReference>
+    <ProjectReference Include="HoudiniEngineUnity.csproj">
+      <Project>{c44bcc2e-49e1-ea62-876a-b08341d4fe10}</Project>
+      <Name>HoudiniEngineUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="HoudiniEngineUnityEditor.csproj">
+      <Project>{4c6fe44a-e6e8-32c2-60f5-211bdd8a2454}</Project>
+      <Name>HoudiniEngineUnityEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="HoudiniEngineUnity.VisualScripting.csproj">
+      <Project>{7c77fbb8-9675-f602-3831-2114b347235b}</Project>
+      <Name>HoudiniEngineUnity.VisualScripting</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
