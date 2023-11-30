@@ -5,9 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnity", "Houdi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnityEditor", "HoudiniEngineUnityEditor.csproj", "{4c6fe44a-e6e8-32c2-60f5-211bdd8a2454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnity.VisualScripting", "HoudiniEngineUnity.VisualScripting.csproj", "{7c77fbb8-9675-f602-3831-2114b347235b}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{8c7ea67e-71de-1382-0f78-aaaf4bc9c512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnity.VisualScripting", "HoudiniEngineUnity.VisualScripting.csproj", "{7c77fbb8-9675-f602-3831-2114b347235b}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoudiniEngineUnityEditor.VisualScripting", "HoudiniEngineUnityEditor.VisualScripting.csproj", "{e2d129c8-cdd6-16f0-7005-e7b244a068e4}"
 EndProject
@@ -20,10 +20,10 @@ Global
 		{c44bcc2e-49e1-ea62-876a-b08341d4fe10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4c6fe44a-e6e8-32c2-60f5-211bdd8a2454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4c6fe44a-e6e8-32c2-60f5-211bdd8a2454}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7c77fbb8-9675-f602-3831-2114b347235b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7c77fbb8-9675-f602-3831-2114b347235b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8c7ea67e-71de-1382-0f78-aaaf4bc9c512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8c7ea67e-71de-1382-0f78-aaaf4bc9c512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7c77fbb8-9675-f602-3831-2114b347235b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7c77fbb8-9675-f602-3831-2114b347235b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e2d129c8-cdd6-16f0-7005-e7b244a068e4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e2d129c8-cdd6-16f0-7005-e7b244a068e4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
