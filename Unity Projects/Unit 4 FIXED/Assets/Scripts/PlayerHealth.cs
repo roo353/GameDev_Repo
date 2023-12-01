@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private float maxHealth;
+    [SerializeField]
+    private float maxHealth;
 
     private float currentHealth;
 
     public HealthBar healthBar;
+
+    [SerializeField]
+    private AudioSource damageSound;
     private void Start()
     {
         currentHealth = maxHealth;
@@ -18,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        damageSound.Play();
         currentHealth -= amount;
         healthBar.SetSlider(currentHealth);
     }

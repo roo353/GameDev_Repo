@@ -11,6 +11,9 @@ public class ShieldPowerUp : MonoBehaviour
 
     public float time;
 
+    [SerializeField]
+    private AudioSource shieldCollect;
+
     void Start()
     {
         shieldActive = false;
@@ -32,6 +35,7 @@ public class ShieldPowerUp : MonoBehaviour
 
         if(shieldActive == true)
         {
+            shieldCollect.Play();
             transform.SetParent(shield);
             transform.localPosition = Vector3.zero;
 

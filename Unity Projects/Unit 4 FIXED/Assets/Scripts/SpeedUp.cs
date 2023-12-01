@@ -9,11 +9,15 @@ public class SpeedUp : MonoBehaviour
 
     public float addSpeed = 5f;
     public float timer = 5f;
+
+    [SerializeField]
+    private AudioSource speedCollect;
     
     void OnTriggerEnter (Collider other)
     {
         if(other.CompareTag("Player"))
         {
+            speedCollect.Play();
             StartCoroutine (PowerUpSpeed(other));
         }
     }
