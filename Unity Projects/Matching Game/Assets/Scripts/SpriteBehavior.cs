@@ -14,6 +14,9 @@ public class SpriteBehavior : MonoBehaviour
 
     public void ChangeRendererColor (ColorID obj)
     {
-        rendererObj.color = obj.value;
+        if(rendererObj != null)
+            rendererObj.color = obj.value;
+        else
+            Debug.LogError("SpriteRenderer component not found.");
     }
 }
