@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MatchBehavior : MonoBehaviour
-{
-    public ID idObj;
-    public UnityEvent matchEvent, noMatchEvent;
+public class MatchBehavior : IDContainerBehavior
+{   
+    public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
-    private void OnTriggerEnter(Collider other)
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehavior>();
         if(tempObj == null)
-            return;
+            yield break;
          
         var otherID = tempObj.idObj;
         if (otherID == idObj)
@@ -22,6 +21,8 @@ public class MatchBehavior : MonoBehaviour
         else
         {
             noMatchEvent.Invoke();
+            yield return new WaitForSeconds(0.5f);
+            noMatchDelayedEvent.Invoke();
         }
     }
 }
