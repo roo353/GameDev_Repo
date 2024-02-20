@@ -21,7 +21,7 @@ public class IntData : ScriptableObject
         }
         else
         {
-            value = obj.value;
+            value = obj.value;  
         }
     }
 
