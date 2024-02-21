@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 81724308465335799}
   - component: {fileID: 5183348047587687123}
   - component: {fileID: 6972911014542381961}
-  - component: {fileID: -1564557420554183323}
-  - component: {fileID: 7062596151006419194}
-  - component: {fileID: -9177682431995528433}
+  - component: {fileID: -3632156945018329651}
+  - component: {fileID: -9034913922710865769}
+  - component: {fileID: 8843301268588383197}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -151,7 +151,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-1564557420554183323
+--- !u!114 &-3632156945018329651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199c04d4c7471c24099047e2dd26a2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7062596151006419194
+--- !u!114 &-9034913922710865769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,12 +178,12 @@ MonoBehaviour:
   startEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1564557420554183323}
+      - m_Target: {fileID: -3632156945018329651}
         m_TargetAssemblyTypeName: SpriteBehavior, Assembly-CSharp
         m_MethodName: ChangeRendererColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: dd5782af44e6dd340ab196cc486a034a, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 714edb9e6e976654cbe590269f7e4bd5, type: 2}
           m_ObjectArgumentAssemblyTypeName: ColorIDDataList, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-9177682431995528433
+--- !u!114 &8843301268588383197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,11 +205,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8124966937757333795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 287fef8214b19894ba77bb2f52165da3, type: 3}
+  m_Script: {fileID: 11500000, guid: ad0c0d2a38b141c41ac0d296162bd973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 0}
+  idObj: {fileID: 11400000, guid: 5ce03ff5655620c43afe5040264e31fa, type: 2}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
-  colorIDDataListObj: {fileID: 11400000, guid: dd5782af44e6dd340ab196cc486a034a, type: 2}

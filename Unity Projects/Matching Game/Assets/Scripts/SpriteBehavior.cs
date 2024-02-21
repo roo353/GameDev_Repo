@@ -14,13 +14,10 @@ public class SpriteBehavior : MonoBehaviour
 
     public void ChangeRendererColor (ColorID obj)
     {
-        if(rendererObj != null)
-            rendererObj.color = obj.value;
-        else
-            Debug.LogError("SpriteRenderer component not found.");
+        rendererObj.color = obj.value;        
     }
 
-    public void ChangeRendererColor (ColorIDDataList obj)
+    public void ChangeRendererColor(ColorIDDataList obj)
     {
         rendererObj.color = obj.currentColor.value;
     }

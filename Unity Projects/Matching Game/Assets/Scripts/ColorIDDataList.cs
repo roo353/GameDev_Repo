@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ColorIDDataList : ScriptableObject
 {
-    public List<ColorID> colorIDList;   
+    public List<ColorID> colorIDList;
 
     public ColorID currentColor;
 
@@ -13,7 +13,7 @@ public class ColorIDDataList : ScriptableObject
 
     public void SetCurrentColorRandomly()
     {
-        num = colorIDList.Count - 1;
+        num = colorIDList.Count-1;
         currentColor = colorIDList[num];
     }
 }
