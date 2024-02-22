@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CoroutineBehavior : MonoBehaviour
 {
-    public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUntilFalseEvent;
+    public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, afterGoEvent, repeatUntilFalseEvent;
 
     public IntData counterNum;
     public bool canRun;
@@ -36,6 +36,8 @@ public class CoroutineBehavior : MonoBehaviour
             yield return wfsObj;
         }
         endCountEvent.Invoke();
+
+        afterGoEvent.Invoke();
     }
 
     public void StartRepeatUntilFalse()

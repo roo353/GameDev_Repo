@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MatchGame1.unity
+    guid: fb1c3b18cce8b2941acc93827588fedb
+  - enabled: 1
+    path: Assets/Scenes/123Go.unity
+    guid: b44e64bf04980eb4bac7b54011b9a61f
+  - enabled: 1
+    path: Assets/Scenes/Instancing.unity
+    guid: e780c2fa590d83d41a24d3f3604b4474
   m_configObjects: {}
