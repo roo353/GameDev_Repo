@@ -21,4 +21,9 @@ public class SpriteBehavior : MonoBehaviour
     {
         rendererObj.color = obj.currentColor.value;
     }
+
+    public void DestroyMatchingObjects()
+    {
+        Destroy(gameObject);
+    }
 }

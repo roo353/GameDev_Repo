@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7342876078995661273}
   - component: {fileID: 4174111401594851996}
   m_Layer: 0
-  m_Name: InstancerGeo
+  m_Name: InstancerRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,10 +68,13 @@ MonoBehaviour:
   endCountEvent:
     m_PersistentCalls:
       m_Calls: []
+  afterGoEvent:
+    m_PersistentCalls:
+      m_Calls: []
   repeatUntilFalseEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: dd5782af44e6dd340ab196cc486a034a, type: 2}
+      - m_Target: {fileID: 11400000, guid: 714edb9e6e976654cbe590269f7e4bd5, type: 2}
         m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
         m_MethodName: SetCurrentColorRandomly
         m_Mode: 1

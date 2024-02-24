@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c43fb086d64cb0641ab2f2e354ca1597, type: 3}
-  m_Name: Copper Rose
+  m_Name: Yellow
   m_EditorClassIdentifier: 
-  value: {r: 0.72156864, g: 0.54901963, b: 0.54901963, a: 1}
+  value: {r: 0.9433962, g: 0.75447965, b: 0.23495904, a: 1}
